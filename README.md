@@ -8,6 +8,8 @@ A CLI Scheme index rest client implementation.
 
 `mvn package -Pnative` to build a native exectuable (requires graalvm native image)
 
+Built files are output in `target` folder.
+
 `mvn test -Pintegration-test` to run tests that do rest calls
 
 ## Instalation

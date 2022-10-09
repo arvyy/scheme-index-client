@@ -54,10 +54,10 @@ public class Main {
                 .desc("Search query (required for non-interactive mode)")
                 .build());
         opts.addOption(Option.builder()
-                .option("s")
-                .longOpt("size")
+                .option("r")
+                .longOpt("rows")
                 .hasArg(true)
-                .desc("Page size, defaults to 10")
+                .desc("Row count / page size, defaults to 10")
                 .build());
         opts.addOption(Option.builder()
                 .option("p")
@@ -120,7 +120,7 @@ public class Main {
             return;
         }
         try {
-            var pageSizeStr = cl.getOptionValue("s", "10");
+            var pageSizeStr = cl.getOptionValue("r", "10");
             pageSize = Integer.parseInt(pageSizeStr);
         } catch (Exception e) {
             err.println("Given page size is not a positive integer");
@@ -152,7 +152,7 @@ public class Main {
     static void printHelp(PrintStream out, Options opts) {
         var formatter = new HelpFormatter();
         var footer =
-                "Scheme Index rest client\nReport issues at https://github.com/arvyy/scheme-index-client\n\n" +
+                "Scheme Index rest client\nReport issues at https://github.com/arvyy/scheme-index-client\nVersion " + Version.getVersion() + "\n\n" +
                 "Client has 2 distinct modes -- interactive and non-interactive.\n" +
                 "Non-interactive mode accepts a query input through the argument, executes it, prints the result, and exits. It is " +
                 "intended to be used programmatically from other software (for example, from VIM). " +
@@ -221,6 +221,8 @@ public class Main {
                     return filtersets.get(choice - 1);
                 }
             } catch (NumberFormatException e) {
+            } catch (UserInterruptException e) {
+                System.exit(0);
             }
         }
     }
