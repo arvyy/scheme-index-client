@@ -1,0 +1,62 @@
+[
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.FacetValue",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.FuncParamSignature",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.FuncSignature",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.FuncSignature$FuncParam",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.FuncSignature$FuncReturn",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.SearchItem",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.SearchItem$SearchItemType",
+    "allPublicFields": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.SearchResult",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.SpecValue",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.SyntaxParamSignature",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.SyntaxSignature",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.SyntaxSubsyntaxSignature",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  }
+
+]
