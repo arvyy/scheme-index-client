@@ -44,12 +44,22 @@
     "allPublicConstructors": true
   },
   {
+    "name" : "com.github.arvyy.scmindexclient.result.SpecValue$SpecValueEntry",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
     "name" : "com.github.arvyy.scmindexclient.result.SyntaxParamSignature",
     "allPublicMethods": true,
     "allPublicConstructors": true
   },
   {
     "name" : "com.github.arvyy.scmindexclient.result.SyntaxSignature",
+    "allPublicMethods": true,
+    "allPublicConstructors": true
+  },
+  {
+    "name" : "com.github.arvyy.scmindexclient.result.SyntaxSignature$SyntaxPattern",
     "allPublicMethods": true,
     "allPublicConstructors": true
   },
